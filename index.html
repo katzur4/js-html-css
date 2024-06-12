@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pokemonContainer">
+            <div class="pokemonImgContainer">
+                <img src="" id="p1Img" alt="">
+            </div>
+            <div class="p1HealthBarContainer">
+                <span id="p1CurrentHealth"></span><span id="p1TotalHealth">/100</span>
+            </div>
+            <div class="pokemonNameContainer" >
+                <p id="p1Name"></p>
+            </div>
+            <div class="pokemonAttackContainer">
+                <button id="p1Attack">Attack</button>
+            </div>
+
+        </div>
+        <div class="vs">
+            <h1>VS</h1>
+        </div>
+        <div class="pokemonContainer">
+            <div class="pokemonImgContainer">
+                <img src="" id="p2Img" alt="">
+            </div>
+            <div class="p2HealthBarContainer" style="background-color: green; height: 20px;">
+                <span id="p2CurrentHealth"></span><span id="p2TotalHealth">/100</span>
+            </div>
+            <div class="pokemonNameContainer" >
+                <p id="p2Name"></p>
+            </div>
+            <div class="pokemonAttackContainer">
+                <button id="p2Attack">Attack</button>
+            </div>
+        </div>
+    </div>
+    <div class="battleLogs">
+        <p id="battleLogs">
+
+        </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
