@@ -74,20 +74,31 @@ const myFriends = [
 //object constructor
 // pokemons have types types determines attacks 
 
-function Pokemon(name){
-    this.name = name;
-    this.attackDmg = 10;
-    this.health = 100;
-    this.attack = (target) => {
-        target.health = target.health - this.attackDmg; 
-        battleLogs.append(`${this.name} attacks ${target.name} for ${this.attackDmg}`);
-        battleLogs.append(document.createElement("br"));
-        battleLogs.append(`${target.name} has ${target.health} health\n`);
-        battleLogs.append(document.createElement("br"));
+class Pokemon{
+    // type of pokemon ig fire water leaf
+    //per type has specific attack
+    constructor (name){
+        this.name = name;
+        this.attackDmg = 10;
+        this.health = 100;
+        // this.attack = (target) => {
+        //     target.health = target.health - this.attackDmg; 
+        //     battleLogs.append(`${this.name} attacks ${target.name} for ${this.attackDmg}`);
+        //     battleLogs.append(document.createElement("br"));
+        //     battleLogs.append(`${target.name} has ${target.health} health\n`);
+        //     battleLogs.append(document.createElement("br"));
+        // }
+    }
+   
+}
+class Pikachu extends Pokemon{
+    constructor (){
+        this.speed = 40;
+        this.accuracy = 50;
     }
 }
 
-
+const Pikachu1 = new Pikachu("Pikachu");
 const Bulbasaur = new Pokemon("Bulbasaur");
 const Charmander = new Pokemon("Charmander");
 

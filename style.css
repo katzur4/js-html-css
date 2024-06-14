@@ -35,3 +35,18 @@
     background-color: green; 
     height: 20px;
 }
+.display-none{
+    display: none !important;
+}
+.display-block{
+    display: flex !important;
+}
+.selectPokemon{
+    display: flex;
+    gap: 1.7em;
+}
+
+.pokemonOption{
+    height: 150px;
+    width: auto;
+}

@@ -7,45 +7,66 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
     <div class="container">
-        <div class="pokemonContainer">
-            <div class="pokemonImgContainer">
-                <img src="" id="p1Img" alt="">
-            </div>
-            <div class="p1HealthBarContainer">
-                <span id="p1CurrentHealth"></span><span id="p1TotalHealth">/100</span>
-            </div>
-            <div class="pokemonNameContainer" >
-                <p id="p1Name"></p>
-            </div>
-            <div class="pokemonAttackContainer">
-                <button id="p1Attack">Attack</button>
-            </div>
+        <div class="home display-block">
+            <button id="newGame" type="button" value="new game">New Game</button>    
+        </div>
+        <div class="battle display-none">
 
-        </div>
-        <div class="vs">
-            <h1>VS</h1>
-        </div>
-        <div class="pokemonContainer">
-            <div class="pokemonImgContainer">
-                <img src="" id="p2Img" alt="">
+            <div class="pokemonContainer">
+                <h2>Player 1</h2>
+                <div class="selectPokemon" id="selectPokemon">
+                    <img src="./assets/img/charmander.png" id="p1Charmander" alt="" class="pokemonOption" role="button">
+                    <img src="./assets/img/bulbasaur.png" id="p1Bulbasaur" alt="" class="pokemonOption" role="button">
+                    <img src="./assets/img/psyduck.png" id="p1Psyduck" alt="" class="pokemonOption" role="button">
+                </div>
+                <div class="pokemonImgContainer display-none">
+                    <img src="" id="p1Img" alt="">
+                </div>
+                <div class="p1HealthBarContainer display-none">
+                    <span id="p1CurrentHealth"></span><span id="p1TotalHealth">/100</span>
+                </div>
+                <div class="pokemonNameContainer display-none" >
+                    <p id="p1Name"></p>
+                </div>
+                <div class="pokemonAttackContainer display-none">
+                    <button id="p1Attack">Attack</button>
+                </div>
+    
             </div>
-            <div class="p2HealthBarContainer" style="background-color: green; height: 20px;">
-                <span id="p2CurrentHealth"></span><span id="p2TotalHealth">/100</span>
+            <div class="vs">
+                <h1>VS</h1>
             </div>
-            <div class="pokemonNameContainer" >
-                <p id="p2Name"></p>
-            </div>
-            <div class="pokemonAttackContainer">
-                <button id="p2Attack">Attack</button>
-            </div>
-        </div>
-    </div>
-    <div class="battleLogs">
-        <p id="battleLogs">
+            <div class="pokemonContainer">
+                <h2>Player 2</h2>
+                <div class="selectPokemon" id="selectPokemon">
+                    <img src="./assets/img/charmander.png" id="p2Charmander" alt="" class="pokemonOption" role="button">
+                    <img src="./assets/img/bulbasaur.png" id="p2Bulbasaur" alt="" class="pokemonOption" role="button">
+                    <img src="./assets/img/psyduck.png" id="p2Psyduck" alt="" class="pokemonOption" role="button">
+                </div>
 
-        </p>
-    </div>
-    <script src="./script.js"></script>
+                <div class="pokemonImgContainer display-none">
+                    <img src="" id="p2Img" alt="">
+                </div>
+                <div class="p2HealthBarContainer display-none" style="background-color: green; height: 20px;">
+                    <span id="p2CurrentHealth"></span><span id="p2TotalHealth">/100</span>
+                </div>
+                <div class="pokemonNameContainer display-none" >
+                    <p id="p2Name"></p>
+                </div>
+                <div class="pokemonAttackContainer">
+                    <button id="p2Attack">Attack</button>
+                </div>
+            </div>
+        </div>
+        <div class="battleLogs">
+            <p id="battleLogs">
+    
+            </p>
+        </div>
+        </div>
+    <script src="./script2.js"></script>
 </body>
 </html>
+
